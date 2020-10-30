@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\BallSpawner.cs" />
+     <Compile Include="Assets\CircleSpawnerMouse.cs" />
      <Compile Include="Assets\RandomSpawner.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/MCAST/6.1B/OOP repo/OOP-CheyennePace/lesson 2/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
