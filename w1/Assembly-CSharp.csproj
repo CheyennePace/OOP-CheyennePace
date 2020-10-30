@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\NumberWizardScript.cs" />
+     <Compile Include="Assets\numScript.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/MCAST/6.1B/OOP repo/OOP-CheyennePace/w1/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
