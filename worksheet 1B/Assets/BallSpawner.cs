@@ -8,6 +8,8 @@ public class BallSpawner : MonoBehaviour
     public float padding;
 
     private float XMin, XMax, YMin, YMax;
+
+    private float timer = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +33,12 @@ public class BallSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        timer +=Time.deltaTime * 1000;
+        if ((int)(timer) % 100 == 0)
+        {
+            Debug.Log(timer);
+            Vector2 newposition = new  Vector2(Random.Range(XMin, XMax), Random.Range(XMin, XMax));
+            Instantiate(myCirclePrefab, new Vector3(newposition.x, newposition.y,0), Quaternion.identity);
+        }
     }
 }
