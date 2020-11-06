@@ -124,7 +124,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 34
+  controlID: 55
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -482,9 +482,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: fa310000
-      m_LastClickedID: 12794
-      m_ExpandedIDs: 62fbffff
+      m_SelectedIDs: 42e7ffff
+      m_LastClickedID: -6334
+      m_ExpandedIDs: 6afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -546,17 +546,17 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: -1.1313248, y: 0.19687214, z: -0.30227292}
     speed: 2
-    m_Value: {x: -0.81633127, y: 0.21671908, z: -0.24618214}
+    m_Value: {x: -1.1313248, y: 0.19687214, z: -0.30227292}
   m_RenderMode: 0
   m_CameraMode:
-    drawMode: 1
-    name: Wireframe
+    drawMode: 0
+    name: Shaded
     section: Shading Mode
   m_ValidateTrueMetals: 0
   m_DoValidateTrueMetals: 0
   m_SceneViewState:
     showFog: 1
-    showMaterialUpdate: 0
+    showMaterialUpdate: 1
     showSkybox: 1
     showFlares: 1
     showImageEffects: 1
@@ -581,7 +581,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 13.022601
     speed: 2
-    m_Value: 12.46182
+    m_Value: 13.022601
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -683,7 +683,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: b82d0000
     m_LastClickedID: 11704
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 000000002e2d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -711,7 +711,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffffb82d0000
+    m_ExpandedIDs: ffffffff000000002e2d0000b4310000bc310000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
