@@ -56,6 +56,7 @@
      <Compile Include="Assets\BallSpawner.cs" />
      <Compile Include="Assets\CircleDrag.cs" />
      <Compile Include="Assets\CircleSpawnerMouse.cs" />
+     <Compile Include="Assets\MouseDrag.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/MCAST/6.1B/OOP repo/OOP-CheyennePace/worksheet 1B/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
