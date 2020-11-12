@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Cannon.cs" />
+     <Compile Include="Assets\Scripts\Bullet.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/MCAST/6.1B/OOP repo/OOP-CheyennePace/SuperCannon/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
