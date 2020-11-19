@@ -2,28 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public abstract class Bullet : MonoBehaviour
 {
     private Vector3 mousePos;
-    private float speed = 2;
+    protected float speed = 0f;
     private Vector2 direction;
+
     
+
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
-        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-       //mousePos = new Vector3(mousePos.x, mousePos.y, 0);
-        Debug.Log(mousePos);
-
-        direction = new Vector2 (mousePos.x, mousePos.y + 8f);
+        mousePos = GameData.MouseTarget;
+      
+        direction = new Vector2(mousePos.x, mousePos.y + 8f);
         direction.Normalize();
-
         GetComponent<Rigidbody2D>().velocity = direction * speed;
+
+
+
     }
 
-    // Update is called once per frame
-    void Update()
+    protected virtual void DestroyOutScreen()
     {
-
+        if (this.gameObject.transform.position.x > GameData.XMax) Destroy(this.gameObject);
+        if (this.gameObject.transform.position.x < GameData.XMin) Destroy(this.gameObject);
+        if (this.gameObject.transform.position.y > GameData.YMax) Destroy(this.gameObject);
+        if (this.gameObject.transform.position.y < GameData.YMin) Destroy(this.gameObject);
     }
+
+   
 }
