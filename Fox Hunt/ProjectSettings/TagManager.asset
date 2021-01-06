@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: tree
+    uniqueID: 1925733989
+    locked: 0
+  - name: house
+    uniqueID: 1277574375
+    locked: 0
