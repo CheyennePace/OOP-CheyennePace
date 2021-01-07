@@ -71,7 +71,21 @@ public class PlayerMovement : MonoBehaviour
     // Write method body that returns input key values of 0, 1 or -1 based on whether Player tries to rotate right or left
     float GetRotationInput()
     {
-        return 0f;
+        KeyCode positiveKey = KeyCode.D;
+        KeyCode negativeKey = KeyCode.A;
+
+        if (Input.GetKey(positiveKey))
+        {
+            return 1f;
+        }
+        else if (Input.GetKey(negativeKey))
+        {
+            return -1f;
+        }
+        else
+        {
+            return 0f;
+        }
     }
 
 }
