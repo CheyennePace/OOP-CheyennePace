@@ -41,9 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: background
+    uniqueID: 351837697
+    locked: 0
   - name: tree
     uniqueID: 1925733989
     locked: 0
   - name: house
     uniqueID: 1277574375
+    locked: 0
+  - name: tilemap
+    uniqueID: 640627187
+    locked: 0
+  - name: props
+    uniqueID: 1914476041
     locked: 0
