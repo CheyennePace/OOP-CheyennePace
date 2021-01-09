@@ -15,15 +15,15 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D body;
 
-    // Use this for initialization
-    void Start()
+	// Use this for initialization
+	void Start ()
     {
         // Retrieve reference to this GameObject's Rigidbody component
         body = GetComponent<Rigidbody2D>();
-    }
-
-    // Update is called once per frame
-    void Update()
+	}
+	
+	// Update is called once per frame
+	void FixedUpdate ()
     {
         // Get movement input value
         float movementInput = GetMovementInput();
@@ -45,9 +45,9 @@ public class PlayerMovement : MonoBehaviour
 
         // Rotate our Rigidbody by this amount
         body.MoveRotation(transform.rotation * rotation);
-    }
+	}
 
-    // Returns input key values of 0, 1 or -1 based on whether Player tries to move forward or back
+    // Returns input values of 0, 1 or -1 based on whether Player tries to move forward or back
     float GetMovementInput()
     {
         // Player 1 moves forward and back with W and S; 
@@ -68,24 +68,24 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    // Write method body that returns input key values of 0, 1 or -1 based on whether Player tries to rotate right or left
+    // Returns input values of 0, 1 or -1 based on whether Player tries to rotate right or left
     float GetRotationInput()
     {
+        // Player 1 rotates with A and D; 
         KeyCode positiveKey = KeyCode.D;
-        KeyCode negativeKey = KeyCode.A;
+        KeyCode negativeKey = KeyCode.A; 
 
         if (Input.GetKey(positiveKey))
         {
-            return 1f;
+            return -1f;
         }
         else if (Input.GetKey(negativeKey))
         {
-            return -1f;
+            return 1f;
         }
         else
         {
             return 0f;
         }
     }
-
 }

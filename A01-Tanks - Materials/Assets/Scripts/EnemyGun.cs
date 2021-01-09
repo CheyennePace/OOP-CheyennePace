@@ -27,13 +27,13 @@ public class EnemyGun : MonoBehaviour
     {
         while (true)
         {
-
+            float timer = Random.Range(1f, 5f);
             GameObject missile = Instantiate(missilePrefab, fireTransform.position, transform.rotation);
 
             Rigidbody2D missileBody = missile.GetComponent<Rigidbody2D>();
 
             missileBody.AddForce(transform.up * fireForce);
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(timer);
         }
 
     }

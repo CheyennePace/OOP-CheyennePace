@@ -45,6 +45,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -93,6 +94,8 @@ GameObject:
   - component: {fileID: 6956525045288981620}
   - component: {fileID: 6956525045288981621}
   - component: {fileID: 6956525045288981616}
+  - component: {fileID: 6956525045288981615}
+  - component: {fileID: 6956525045288981619}
   m_Layer: 0
   m_Name: PlayerTank
   m_TagString: Player
@@ -130,6 +133,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -228,6 +232,34 @@ MonoBehaviour:
     type: 3}
   fireTransform: {fileID: 6956525045492359201}
   fireForce: 500
+--- !u!114 &6956525045288981615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6956525045288981622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e90a852a4ede4f44d86a4c5708e5340e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startHealth: 3
+--- !u!114 &6956525045288981619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6956525045288981622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cba6468941af11348a6c820034065d57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerNumber: 1
+  speed: 5
+  rotationSpeed: 180
 --- !u!1 &6956525045492359202
 GameObject:
   m_ObjectHideFlags: 0
