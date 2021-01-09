@@ -36,6 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\scripts\CameraSystem.cs" />
      <Compile Include="Assets\scripts\CharacterController2D.cs" />
      <Compile Include="Assets\scripts\PlayerMovement.cs" />
      <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
