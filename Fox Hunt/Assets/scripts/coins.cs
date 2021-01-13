@@ -12,8 +12,8 @@ public class coins : MonoBehaviour
 
      void OnTriggerEnter2D(Collider2D col)
     { 
-        if (col.name == "player")
-            FindObjectOfType<GameScore>().AddToScore();
+        if (col.name == "Player")
+            //FindObjectOfType<GameScore>().AddToScore();
             Destroy(gameObject);
     }
 }

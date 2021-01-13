@@ -1575,7 +1575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 461690657}
   animator: {fileID: 461690663}
-  runSpeed: 50
+  runSpeed: 70
 --- !u!95 &461690663
 Animator:
   serializedVersion: 3
@@ -19753,6 +19753,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.y
       value: 2.665371
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770702248895092102, guid: 71341713fa9c2364d9ce5dedbd34b3f7,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71341713fa9c2364d9ce5dedbd34b3f7, type: 3}
